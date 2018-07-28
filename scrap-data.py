@@ -181,7 +181,7 @@ def scrap_bouts(boxer_url, bouts, bout_keys):
 
         """ Stance """
         stance_A, stance_B = get_column_data(find_row('stance', rows), str)
-        stance_A, stance_B = re.sub('[^a-z]', '', stance_A), re.sub('[^a-z]', '', stance_A)
+        stance_A, stance_B = re.sub('[^a-z]', '', stance_A), re.sub('[^a-z]', '', stance_B)
         if stance_A not in ['orthodox', 'southpaw']:
             stance_A = None
         if stance_B not in ['orthodox', 'southpaw']:
